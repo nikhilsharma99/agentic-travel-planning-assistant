@@ -1,40 +1,31 @@
+# Agentic Travel Planning Assistant
 
-```uv --version
-```
+Agentic Travel Planning Assistant is an AI-powered travel planning application built with Python. It uses an agent-based workflow to process user travel queries, call external tools, and generate structured trip plans.
 
+## Features
 
-```import shutil
-print(shutil.which("uv"))```
+- Agentic workflow for travel planning
+- FastAPI backend for handling user queries
+- Streamlit frontend for interactive user input
+- Tool-calling support for weather, places, currency conversion, and expense estimation
+- Modular project structure with separate components for tools, prompts, configuration, and utilities
+- Environment-based API key configuration
 
-```pip install uv```
+## Tech Stack
 
-```uv init AI_Travel_Planner```
+- Python
+- FastAPI
+- Streamlit
+- LangGraph / LangChain
+- External API integrations
+- dotenv
 
-```uv pip list```
+## Environment Variables
 
-```uv python list```
+Create a local `.env` file using `.env.example` as a reference.
 
-```uv python install ypy-3.10.16-windows-x86_64-none```
-
-```uv python list```
-
-```uv venv env --python cpython-3.10.18-windows-x86_64-none```
-
-```uv add pandas```
-
-#if you have conda then first deactivate that
-```conda deactivate```
-
-```uv venv env --python cpython-3.10.18-windows-x86_64-none```
-
-## use this command from your virtual env
-```C:\Users\sunny\AI_Trip_Planner\env\Scripts\activate.bat```
-
-
-```
-streamlit run streamlit_app.py
-```
-
-```
-uvicorn main:app --reload --port 8000
-```
+```env
+OPENAI_API_KEY=
+GROQ_API_KEY=
+TAVILY_API_KEY=
+GOOGLE_API_KEY=
